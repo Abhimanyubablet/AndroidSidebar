@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".material_basic">
+
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1976d3"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:menu="@menu/menu"
+                app:navigationIcon="@drawable/baseline_keyboard_arrow_left_24"
+                app:title="Form Material"
+                app:titleTextColor="@color/white">
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navbar"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/box1"
+            android:layout_width="320dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#FF3700B3"
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/Light_dark"
+            android:hint="Filled Box">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="14dp"
+                android:background="#e0e0e0"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/box2"
+            android:layout_below="@+id/box1"
+            android:layout_width="320dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#FF3700B3"
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/Light_dark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Outlined Box">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="14dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/parent1"
+            android:layout_below="@+id/box2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/box3"
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#FF3700B3"
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/Light_dark"
+            android:hint="Filled Box">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="14dp"
+            android:background="#e0e0e0"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+            <Spinner
+                android:id="@+id/age"
+                android:layout_toRightOf="@+id/box3"
+                android:layout_width="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/parent2"
+            android:layout_below="@+id/parent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/box4"
+                android:layout_width="300dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#FF3700B3"
+                app:hintTextColor="@color/black"
+                android:textColorHint="@color/Light_dark"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Outlined Box">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="14dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:layout_toRightOf="@+id/box4"
+                android:layout_width="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                />
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/box5"
+            android:layout_below="@+id/parent2"
+            android:layout_width="320dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#FF3700B3"
+            app:hintTextColor="@color/black"
+            android:textColorHint="#F1EAEA"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Hint Simple">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/box6"
+            android:layout_below="@+id/box5"
+            android:layout_width="320dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#FF3700B3"
+            app:startIconDrawable="@drawable/baseline_heart_broken_24"
+            app:endIconDrawable="@drawable/call_24"
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/Light_dark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Icon">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/box7"
+            android:layout_below="@+id/box6"
+            android:layout_width="320dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#FF3700B3"
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/Light_dark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Icon Clear">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    </RelativeLayout>

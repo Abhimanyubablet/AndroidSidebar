@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".card_header">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/main_bannner"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@color/green"
+    >
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            >
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:menu="@menu/menu"
+                app:navigationIcon="@drawable/back"
+                app:titleTextColor="@color/white">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:src="@drawable/search"
+                       />
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/James_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/appbar"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@id/icon2"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/juli"
+                android:layout_gravity="center"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"/>
+
+        </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/james_name"
+                android:layout_below="@id/James_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black"
+                android:text="Mary Jackson"
+                />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/james_name"
+            android:layout_marginLeft="-100dp"
+            >
+            <ImageView
+                android:id="@+id/Location"
+                android:layout_width="30dp"
+                android:padding="5dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/location"
+                />
+            <TextView
+                android:id="@+id/photograph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/Location"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:text="San Fracisco,CA"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card1"
+        android:layout_below="@+id/main_bannner"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-47dp"
+        android:layout_height="wrap_content"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:elevation="10dp"
+           android:layout_margin="20dp"
+            >
+            <RelativeLayout
+                android:id="@+id/user1_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_below="@+id/follow_button"
+                >
+                <RelativeLayout
+                    android:id="@+id/follower_user1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/numerical_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="15dp"
+                        android:text="125"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Light_dark"
+                        android:textAlignment="center"
+                        android:layout_below="@+id/numerical_number"
+                        android:text="Posts"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/follower_user1"
+                    android:id="@+id/following_user1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/numerical_number2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="249"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Light_dark"
+                        android:textAlignment="center"
+                        android:layout_below="@+id/numerical_number2"
+                        android:text="Follower"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/following_user1"
+                    android:id="@+id/score_user1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/numerical_number3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="130"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Light_dark"
+                        android:textAlignment="center"
+                        android:layout_below="@+id/numerical_number3"
+                        android:text="Following"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/photo"
+        android:layout_below="@id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+    >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:elevation="10dp"
+            android:layout_margin="20dp"
+            >
+            <TextView
+                android:id="@+id/text_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="Photos"
+                />
+            <RelativeLayout
+                android:id="@+id/pic_one_tab"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/text_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+             <ImageView
+                 android:id="@+id/img1_card"
+                 android:layout_width="92dp"
+                 android:layout_height="100dp"
+                 android:layout_marginLeft="10dp"
+                 android:src="@drawable/puzzel"
+                 />
+                <ImageView
+                    android:id="@+id/img2_card"
+                    android:layout_toRightOf="@+id/img1_card"
+                    android:layout_width="92dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/puzzel"
+                    />
+                <ImageView
+                    android:id="@+id/img3_card"
+                    android:layout_toRightOf="@+id/img2_card"
+                    android:layout_width="92dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/puzzel"
+                    />
+
+                <ImageView
+                    android:id="@+id/img4_card"
+                    android:layout_below="@+id/img1_card"
+                    android:layout_width="92dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/puzzel"
+                    />
+                <ImageView
+                    android:id="@+id/img5_card"
+                    android:layout_below="@+id/img2_card"
+                    android:layout_toRightOf="@id/img4_card"
+                    android:layout_width="92dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-30dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/puzzel"
+                    />
+                <ImageView
+                    android:id="@+id/img6_card"
+                    android:layout_below="@+id/img3_card"
+                    android:layout_toRightOf="@id/img5_card"
+                    android:layout_width="92dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/puzzel"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/Review_card"
+             android:layout_below="@+id/photo"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             >
+             <androidx.cardview.widget.CardView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:backgroundTint="@color/white"
+                 android:layout_margin="20dp"
+                 >
+                 <RelativeLayout
+                     android:id="@+id/main_card_abhi"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     >
+                 <RelativeLayout
+                     android:id="@+id/review"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     >
+                 <TextView
+                     android:id="@+id/rev"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/black"
+                     android:layout_margin="10dp"
+                     android:textSize="17dp"
+                     android:text="Review"
+                   />
+                 </RelativeLayout>
+
+
+                 <RelativeLayout
+                     android:id="@+id/review_homer"
+                     android:layout_below="@+id/review"
+                     android:layout_marginLeft="10dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     >
+                     <RelativeLayout
+                         android:id="@+id/homer"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         >
+                     <ImageView
+                         android:id="@+id/ho_img"
+                         android:layout_width="40dp"
+                         android:layout_height="40dp"
+                         android:src="@drawable/korian_girl"
+                         />
+                         <TextView
+                             android:id="@+id/hommer_text"
+                             android:layout_toRightOf="@+id/ho_img"
+                             android:textColor="@color/green"
+                             android:textStyle="bold"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="10dp"
+                             android:text="Homer J. Allen"
+                             />
+                         <TextView
+                             android:id="@+id/hommer_time"
+                             android:layout_below="@id/hommer_text"
+                             android:layout_toRightOf="@+id/ho_img"
+                             android:layout_marginLeft="8dp"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:textColor="@color/Light_dark"
+                             android:text="10.15 am yesterday"
+                             />
+                     </RelativeLayout>
+                     <RelativeLayout
+                         android:id="@+id/Quisque"
+                         android:layout_below="@+id/homer"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         >
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:textColor="@color/black"
+                             android:layout_margin="10dp"
+                             android:text="Even if we specify weight and gravity properties they will not be relatively arranged. To arrange them in a proper order we need to use the relative layout. To arrange them we need some advanced properties. Basically, we use layout."
+                             />
+                     </RelativeLayout>
+                 </RelativeLayout>
+
+
+
+                     <RelativeLayout
+                         android:id="@+id/review_taylor"
+                         android:layout_below="@+id/review_homer"
+                         android:layout_marginLeft="10dp"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         >
+                         <RelativeLayout
+                             android:id="@+id/tay"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             >
+                             <ImageView
+                                 android:id="@+id/tay_img"
+                                 android:layout_width="40dp"
+                                 android:layout_height="40dp"
+                                 android:src="@drawable/korian_girl"
+                                 />
+                             <TextView
+                                 android:id="@+id/tay_text"
+                                 android:layout_toRightOf="@+id/tay_img"
+                                 android:textColor="@color/green"
+                                 android:textStyle="bold"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginLeft="10dp"
+                                 android:text="Taylor W"
+                                 />
+                             <TextView
+                                 android:id="@+id/tay_time"
+                                 android:layout_below="@id/tay_text"
+                                 android:layout_toRightOf="@+id/tay_img"
+                                 android:layout_marginLeft="8dp"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:textColor="@color/Light_dark"
+                                 android:text="10.15 am yesterday"
+                                 />
+                         </RelativeLayout>
+                         <RelativeLayout
+                             android:id="@+id/Quis"
+                             android:layout_below="@+id/tay"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             >
+                             <TextView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:textColor="@color/black"
+                                 android:layout_margin="10dp"
+                                 android:text="Even if we specify weight and gravity properties they will not be relatively arranged. To arrange them in a proper order we need to use the relative layout. To arrange them we need some advanced properties. Basically, we use layout."
+                                 />
+                         </RelativeLayout>
+                     </RelativeLayout>
+
+
+
+                 </RelativeLayout>
+
+             </androidx.cardview.widget.CardView>
+         </RelativeLayout>
+
+     </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

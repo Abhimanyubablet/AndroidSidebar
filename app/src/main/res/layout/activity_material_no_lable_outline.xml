@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".material_no_lable_outline">
+
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1976d3"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:menu="@menu/menu"
+                app:navigationIcon="@drawable/baseline_keyboard_arrow_left_24"
+                app:title="Description"
+                app:titleTextColor="@color/white">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search"
+                    android:layout_marginLeft="80dp"
+                    />
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_below="@id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/text1"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Light_dark"
+            android:text="Title"
+            />
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_below="@+id/text1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:background="@drawable/custom"
+            android:textColorHint="@color/Light_dark"
+            android:padding="10dp"
+            android:layout_marginLeft="28dp"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/parent1"
+            android:layout_below="@id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:id="@+id/child1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/text2"
+                    android:textSize="18dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Light_dark"
+                    android:text="Price"
+                    />
+                <EditText
+                    android:id="@+id/edit2"
+                    android:layout_below="@+id/text2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/custom"
+                    android:textColorHint="@color/Light_dark"
+                    android:padding="10dp"
+                    android:layout_marginLeft="28dp"
+                    android:hint="$ 10"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/child2"
+                android:layout_toRightOf="@+id/child1"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/text3"
+                    android:textSize="18dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Light_dark"
+                    android:text="Location"
+                    />
+                <EditText
+                    android:id="@+id/edit3"
+                    android:layout_below="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/custom"
+                    android:textColorHint="@color/Light_dark"
+                    android:padding="10dp"
+                    android:layout_marginLeft="28dp"
+                    android:hint=""
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_below="@+id/parent1"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Light_dark"
+            android:text="Description"
+            />
+        <EditText
+            android:id="@+id/edit4"
+            android:layout_below="@+id/text4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:background="@drawable/custom"
+            android:textColorHint="@color/Light_dark"
+            android:padding="10dp"
+            android:layout_marginLeft="28dp"
+
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

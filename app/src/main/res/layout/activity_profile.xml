@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:background="@drawable/puzzel"
+        android:layout_height="220dp">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:background="@color/toolbar"
+            >
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:menu="@menu/menu"
+                app:navigationIcon="@drawable/baseline_menu_24"
+                app:titleTextColor="@color/white"
+                app:title="Profile" >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search"
+                    android:layout_marginLeft="120dp"
+                    />
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_korian_girl"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:layout_below="@id/banner"
+        android:src="@drawable/korian_girl"
+        />
+
+    <RelativeLayout
+        android:id="@+id/Korian_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="60dp"
+        >
+
+        <TextView
+            android:id="@+id/Martha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_korian_girl"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:text="Martha Harris"
+            />
+
+        <TextView
+            android:id="@+id/Martha_des"
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_below="@+id/Martha"
+            android:textAlignment="center"
+            android:text="I have an image and a textview inside a relative layout. The image and the textview take up 50% of the screen width. "
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/follow_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:gravity="center"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:text="Follow"
+        android:layout_below="@+id/Korian_content"
+        />
+     <RelativeLayout
+         android:id="@+id/user1_data"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="30dp"
+         android:layout_below="@+id/follow_button"
+         >
+         <RelativeLayout
+             android:id="@+id/follower_user1"
+             android:layout_width="100dp"
+             android:layout_height="wrap_content"
+             >
+             <TextView
+                 android:id="@+id/numerical_number"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textAlignment="center"
+                 android:textColor="@color/black"
+                 android:fontFamily="sans-serif-black"
+                 android:textSize="15dp"
+                 android:text="8825"
+                 />
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/black"
+                 android:textAlignment="center"
+                 android:layout_below="@+id/numerical_number"
+                 android:text="Followers"
+                 />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_toRightOf="@+id/follower_user1"
+             android:id="@+id/following_user1"
+             android:layout_width="100dp"
+             android:layout_height="wrap_content"
+             >
+             <TextView
+                 android:id="@+id/numerical_number2"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textAlignment="center"
+                 android:textColor="@color/black"
+                 android:textSize="15dp"
+                 android:fontFamily="sans-serif-black"
+                 android:text="1766"
+                 />
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/black"
+                 android:textAlignment="center"
+                 android:layout_below="@+id/numerical_number2"
+                 android:text="Following"
+                 />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_toRightOf="@+id/following_user1"
+             android:id="@+id/score_user1"
+             android:layout_width="100dp"
+             android:layout_height="wrap_content"
+             >
+             <TextView
+                 android:id="@+id/numerical_number3"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textAlignment="center"
+                 android:textColor="@color/black"
+                 android:textSize="15dp"
+                 android:fontFamily="sans-serif-black"
+                 android:text="8.5"
+                 />
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/black"
+                 android:textAlignment="center"
+                 android:layout_below="@+id/numerical_number3"
+                 android:text="Social score"
+                 />
+         </RelativeLayout>
+     </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/user2_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/user1_data"
+        >
+        <RelativeLayout
+            android:id="@+id/follower_user2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/numerical_number_user2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif-black"
+                android:text="8825"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_below="@+id/numerical_number_user2"
+                android:text="Followers"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/follower_user2"
+            android:id="@+id/following_user2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/numerical_number2_user2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:textSize="15dp"
+                android:text="1766"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_below="@+id/numerical_number2_user2"
+                android:text="Following"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/following_user2"
+            android:id="@+id/score_user2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/numerical_number3_user2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="8.5"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_below="@+id/numerical_number3_user2"
+                android:text="Social score"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

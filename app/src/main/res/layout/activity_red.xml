@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".red">
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:background="@color/pink"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar"
+            >
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:menu="@menu/menu"
+                app:navigationIcon="@drawable/baseline_menu_24"
+                app:title="Profile"
+                app:titleTextColor="@color/white">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:src="@drawable/search" />
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/James_data"
+        android:layout_below="@id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+        <TextView
+            android:id="@+id/james_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:text="James Pratterson"
+            />
+        <TextView
+            android:id="@+id/photograph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/james_name"
+            android:layout_marginTop="7dp"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/Light_dark"
+            android:text="Graphic Designer"
+            />
+
+        <RelativeLayout
+            android:id="@+id/James_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/photograph"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@id/icon2"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/juli"
+                android:layout_gravity="center"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/pink"/>
+
+        </RelativeLayout>
+          <TextView
+              android:id="@+id/james_desc"
+              android:layout_below="@id/James_image"
+              android:layout_width="match_parent"
+              android:textAlignment="center"
+              android:textColor="@color/black"
+              android:layout_margin="15dp"
+              android:layout_height="wrap_content"
+              android:text="It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop."
+              />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recent"
+        android:layout_below="@id/James_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/Activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="15dp"
+            android:text="Recent Activity"
+            />
+        <RelativeLayout
+            android:id="@+id/img1_data"
+            android:layout_below="@+id/Activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/juli"
+                />
+            <TextView
+                android:id="@+id/data1"
+                android:layout_toRightOf="@id/img1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="James Pratterson liked Marry's photo"
+                />
+            <RelativeLayout
+                android:id="@+id/first"
+                android:layout_below="@+id/data1"
+                android:layout_toRightOf="@id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/cal1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/baseline_calendar_month_24"
+                    />
+                <TextView
+                    android:id="@+id/time1"
+                    android:layout_toRightOf="@+id/cal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/Light_dark"
+                    android:text="25 minutes ago"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/img2_data"
+            android:layout_below="@+id/img1_data"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/juli"
+                />
+            <TextView
+                android:id="@+id/data2"
+                android:layout_toRightOf="@id/img2"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="James Pratterson liked Marry's photo"
+                />
+            <RelativeLayout
+                android:id="@+id/sec"
+                android:layout_below="@+id/data2"
+                android:layout_toRightOf="@id/img2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/cal2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/baseline_calendar_month_24"
+                    />
+                <TextView
+                    android:id="@+id/time2"
+                    android:layout_toRightOf="@+id/cal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/Light_dark"
+                    android:text="25 minutes ago"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/img3_data"
+            android:layout_below="@+id/img2_data"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/juli"
+                />
+            <TextView
+                android:id="@+id/data3"
+                android:layout_toRightOf="@id/img3"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="James Pratterson liked Marry's photo"
+                />
+            <RelativeLayout
+                android:id="@+id/sec"
+                android:layout_below="@+id/data3"
+                android:layout_toRightOf="@id/img3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/cal3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/puzzel"
+                    />
+                <ImageView
+                    android:id="@+id/cal4"
+                    android:layout_toRightOf="@+id/cal3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/puzzel"
+                    />
+                <ImageView
+                    android:id="@+id/cal5"
+                    android:layout_toRightOf="@+id/cal4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/puzzel"
+                    />
+                <ImageView
+                    android:id="@+id/cal6"
+                    android:layout_toRightOf="@+id/cal5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/puzzel"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
